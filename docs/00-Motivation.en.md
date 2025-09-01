@@ -3,7 +3,7 @@
 [English](00-Motivation.en.md) \
 [Traditional Chinese](00-Motivation.zh-hant.md)
 
-I have been using MongoDB since MongoDB 2.2 in 2013. Based on my observations and my assumption, I admire that MongoDB.com wants to show that copyleft (AGPLv3) can be applied commercially in this era, [which is what the FSF/GNU agrees with](https://www.gnu.org/philosophy/selling.html), even though it may contradict some people's philosophies.
+I have been using MongoDB since MongoDB 2.2 in 2013. Based on my observations and my assumption, I admire that MongoDB.com wants to show that copyleft (AGPLv3) can be applied commercially in this era, [which is what the FSF/GNU have been encouraging](https://www.gnu.org/philosophy/selling.html), even though it may contradict some people's philosophies.
 
 After seeing their almost failure in MongoDB pre-2.4 and the dramatical change in fortune [after acquiring WiredTiger as their core in MongoDB 3.0](https://www.mongodb.com/company/newsroom/press-releases/wired-tiger), I feel that I understood [their need to transition from AGPLv3 to SSPL](https://www.mongodb.com/company/newsroom/press-releases/mongodb-issues-new-server-side-public-license-for-mongodb-community-server) after they finally successfully deployed their cloud service with [MongoDB 3.6 in 2017-12](https://github.com/mongodb/mongo/tree/r3.6.0) but [Amazon claimed "DocumentDB 3.6" with "engine patch 1.0"](https://docs.aws.amazon.com/documentdb/latest/developerguide/release-notes.html#release-notes.06-30-2020) **WITH COMPLETELY CLOSED-SOURCE** right after MongoDB.com's deployment (already present [in Alibaba's article in 2018-02](https://www.alibabacloud.com/blog/Alibaba-Cloud-Product-Comparison-for-AWS-Professionals_444958)).
 

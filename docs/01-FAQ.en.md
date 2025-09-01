@@ -1,5 +1,8 @@
 # FAQ
 
+[English](01-FAQ.en.md) \
+[Traditional Chinese](01-FAQ.zh-hant.md)
+
 1. Why do you want to do this?
     * I want to show that SSPL is truly for the FLOSS community, not just for some company's profit.
 2. What's your source of funding?
@@ -23,7 +26,7 @@
     * I do respect patent law, copyright law, trademark law, and intellectual property.
 6. Aren't you afraid that MongoDB.com will publicly defame or sue you with their patents, like what they did to FerretDB.com？
     * **I'm just an ordinary person struggling with basic life needs. Indeed I am extremely afraid of being publicly defamed or involved in any kind of legal issues.**
-    * However, I have faith on MongoDB.com that they understand **reputation and trust** is most important when doing business.
+    * However, I have faith on MongoDB.com that they understand **reputation and trust** are most important when doing business.
     * Furthermore, unlike FerretDB.com, which created an alternative implementation claiming to be the replacement for MongoDB, I try my best to understand and follow SSPL, to promote the superiosity of MongoDB, and help users appreciate the quality of th service provided by MongoDB.com.
     * Like AGPLv3, because of Section 11 in SSPL, it is unlikely that MongoDB.com will use their patents to sue me with this SSPL-compliant MongoDB-As-a-Service project.
 7. If you do respect patent law, copyright law, trademark law, and intellectual property, then why do you care about copyleft?
@@ -31,7 +34,7 @@
       perhaps due to my stupidity, cultural differences, or translation issues, I don't feel they are that different, so I respect the so-called "intellectual property".
     * Although I have a different philosophy than the FSF/GNU, I do respect [their view on copyleft](https://www.gnu.org/licenses/copyleft.en.html).
     * **I believe that the copyleft issues should be resolved in the copyleft way, with the exception that the copyright owner should be respected.**
-    * As mentioned in [00-Motivation.md](./00-Motivation.md), I feel that the definition of "covered work" in the AGPLv3 will take too much time and effort to debate in court. I feel that the SSPL is more practical.
+    * As mentioned in [00-Motivation.md](./00-Motivation.en.md), I feel that the definition of "covered work" in the AGPLv3 will take too much time and effort to debate in court. I feel that the (fine-tuned) SSPL is more practical.
 8. Doesn't MongoDB.com's way of SSPL creates advantage to MongoDB.com as they can have proprietary service of MongoDB but not suing themselves?
     * **I believe that the copyleft issues should be resolved in the copyleft way, with the exception that the copyright owner should be respected.**
     * I understand it may violate some people's philosophies, but practically I believe it is also debatable whether AGPLv3 will be triggered to the copyright owner in court.
@@ -43,7 +46,7 @@
 9. Are you against OSI？
     * No, I agree with OSI that SSPLv1 does not **precisely** reflect the intent either.
     * The issue with AGPLv3 is that "a work based on the Program" is somewhat vague in the context of "Remote Network Interaction", as it can be too narrow as "object-code work compiled based on the Program, either statically or dynamically linked" when debating in court. [Amazon asssumed that they got away from AGPLv3 by "engine patch 1.0"](https://docs.aws.amazon.com/documentdb/latest/developerguide/release-notes.html#release-notes.06-30-2020).
-    * My understanding to the original intent of SSPLv1 is to make "a work based on the Program" more concrete in the context of "Remote Network Interaction". However, it leads to the other vague boundary as "[what in the service cluster, including hardware, firmware, kernel space, user space, and other components (ex: VM), can be free from being triggered by SSPLv1](https://lists.opensource.org/pipermail/license-review_lists.opensource.org/2018-October/003654.html)？ Or what licenses of the components can be used if they do want to make MongoDB-As-a-Service while complying to SSPL (by open source with SSPL licensed)？"
+    * My understanding to the original intent of SSPLv1 is to make "a work based on the Program" more concrete in the context of "Remote Network Interaction". However, SSPLv1 leads to the other vague boundary as "[what in the service cluster, including hardware, firmware, kernel space, user space, and other components (ex: VM), can be free from being triggered by SSPLv1](https://lists.opensource.org/pipermail/license-review_lists.opensource.org/2018-October/003654.html)？ Or what licenses of the components can be used if they do want to make MongoDB-As-a-Service while complying to SSPL (by open source with SSPL licensed)？"
 10. Doesn't OSI say that SSPL is against OSD#6 (and possibly OSD#9)？
     * OSD#6 is "No Discrimination Against Fields of Endeavor".
     * OSD#9 is "License Must Not Restrict Other Software".
@@ -67,4 +70,4 @@
 14. English is not your mother-tone language, are you sure what you are saying？ You or I may misinterpret anything here～
     * I was actually extremely critized by many people that they need lots of time understanding my Chinese writing.
     * However, I am almost-sure that I can correctly read/revise Chinese articles.
-    * If I have time, I'll try to have gen-AI translate to Chinese, and revise accordingly.
+    * If I have time, I'll try my best to provide multi-language versions.
