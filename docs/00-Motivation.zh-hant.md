@@ -3,7 +3,7 @@
 [English](00-Motivation.en.md) \
 [Traditional Chinese](00-Motivation.zh-hant.md)
 
-我從 2013 年的 MongoDB 2.2 開始就在使用 MongoDB. 根據我的觀察和我的假設, 我敬佩 MongoDB.com 想要展現在這個年代 copyleft (AGPLv3) 可以應用在商業上. 儘管與一些人的哲學可能相違背, [這樣的做法其實是 FSF/GNU 同意的](https://www.gnu.org/philosophy/selling.zh-tw.html).
+我從 2013 年的 MongoDB 2.2 開始就在使用 MongoDB. 根據我的觀察和我的假設, 我敬佩 MongoDB.com 想要展現在這個年代 copyleft (AGPLv3) 可以應用在商業上. 儘管與一些人的哲學可能相違背, [這樣的做法其實是 FSF/GNU 一直鼓勵的](https://www.gnu.org/philosophy/selling.zh-tw.html).
 
 在看到他們幾乎失敗的 MongoDB pre-2.4 版本, 和[在 acquire WiredTiger 當作 MongoDB 3.0 的核心以後的戲劇性命運的轉折](https://www.mongodb.com/company/newsroom/press-releases/wired-tiger), 我覺得我可以理解 在他們終於成功地在 [2017-12 使用 MongoDB 3.6](https://github.com/mongodb/mongo/tree/r3.6.0) 開始他們的 cloud service 以後, Amazon 立即以 **完全 CLOSED-SOURCE** 的方式 [宣稱 "DocumentDB 3.6" with "engine patch 1.0"](https://docs.aws.amazon.com/documentdb/latest/developerguide/release-notes.html#release-notes.06-30-2020) (已在 [Alibaba 的 2018-02](https://www.alibabacloud.com/blog/Alibaba-Cloud-Product-Comparison-for-AWS-Professionals_444958) 的文章裡出現.), 所以 MongoDB.com 希望可以透過 SSPL 來避免這種 **完全 closed-source** 的事情再發生.
 
