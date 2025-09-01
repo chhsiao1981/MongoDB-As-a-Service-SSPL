@@ -1,15 +1,18 @@
 # Planning
 
+[English](02-Planning.en.md) \
+[Traditional Chinese](02-Planning.zh-hant.md)
+
 ## Document Language
 
 The main (required) language used for document in this repository is English. It is welcome to **correctly** translate the content to the other languages.
-In general, the translation **may** be achieved through many existing generative-AI tools.
+In general, the translation **may** be achieved through many existing gen-AI tools.
 
 ## Files in this Repository
 
 The files in this repository can be classified as 4 types:
 
-1. python/ts/golang/c/bash-based source code.
+1. python/ts/golang/c/bash/rust-based source code.
 2. configuration templates, with file suffix `.[ini,yaml,toml].tmpl`.
 3. git-submodules from other repositories.
 4. documents, with file suffix `.md`.
@@ -35,7 +38,7 @@ with extremely limited resources and without any management.
 * SSL-cert scripts to auto-renew SSL-cert.
 * system monitoring visualization tools.
 * system alerting tools.
-* donation/payment-to-user system.
+* donation/payment-to-specific-user-resource system.
 * user account mechanism.
-* donation-based scaling mechanism.
+* donation/payment-based scaling mechanism.
 * other scripts to ensure sustainability of this project.
