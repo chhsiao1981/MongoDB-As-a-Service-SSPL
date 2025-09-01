@@ -56,7 +56,7 @@
         * Check the "User Product" part in Section 6, and have a boundary in Section 13 based on "User Product".
         * [**Thoughtfully** have a list of licenses like what GNU does](https://www.gnu.org/licenses/license-list.en.html#SoftwareLicenses).
 12. What if MongoDB.com just doesn't do anything？ Basically you are nobody～
-    * As long as I and "those with projects similar to this project" don't get publicly defamed or sued, I respect MongoDB.com's decision, whether they want to improve SSPLv1 or not.
+    * As long as I and "those with projects following SSPL" don't get publicly defamed or sued, I respect MongoDB.com's decision, whether they want to improve SSPLv1 or not.
 13. Are you against proprietary software or big companies？
     * No, I do understand that the entities producing excellent products should receive the corresponding financial rewards.
     * I actually treat myself in 4 distinct modes, proprietary mode, FLOSS (as a whole family) mode, permissive-license mode, and (rarely) copyleft mode. Given the pre-condition that I don't violate Laws:
