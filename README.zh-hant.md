@@ -6,7 +6,7 @@
 MongoDB-As-A-Service-SSPL 是一個遵守 SSPL 的 MongoDB-based service。
 這個 repository 的目的包含：
 
-1. 在可負擔的預算下 (最低每月 $5 美金)，我們可以公開的實作遵守 SSPL 的 MongoDB-as-a-Service。
+1. 在可負擔的預算下 (最低可至每月 $5 美金)，我們可以公開的實作遵守 SSPL 的 MongoDB-as-a-Service。
 2. 如同 AGPLv3 一樣，SSPL 可以根據 copyleft 的精神被實行。
 3. 釐清在 MongoDB.com 所維護的 SSPL Section 13 裡規範的需要 open source 的範圍。
 4. 希望 MongoDB.com 可以遵循其聲稱，SSPL 真正是屬於 FLOSS 社群，而不只是追求他們自己的利益。
@@ -19,9 +19,10 @@ MongoDB-As-A-Service-SSPL 是一個遵守 SSPL 的 MongoDB-based service。
 這個 project 的目的是以符合 SSPL 的方式建構一個自我永續的 MongoDB-As-a-Service。並在可負擔的預算下，盡量減少人工操作。
 
 以自我永續作為本專案的前提，本專案的目標如下：
-1. 建立一個透明的付款系統，讓使用者能夠理解為什麼需要支付這些費用。
-2. 將人工操作的財務預算納入考量，並在 configuration 中決定，同時公開給使用者知道。
-3. 本 project 的誘因在於使用者希望降低付款金額，其方式包括：
+1. 將"可負擔預算"納入考量，最小可行之產品之費用最低可至每月 $5 美金。
+2. 建立一個透明的付款系統，讓使用者能夠理解為什麼需要支付這些費用。
+3. 將人工操作的財務預算納入考量，並在 configuration 中決定，同時公開給使用者知道。
+4. 改善本 project 的誘因在於使用者希望降低付款金額，其方式包括：
     * 盡可能自動化各個 components，
     * 盡可能提升服務品質，
     * 盡可能找到最低成本的資源。

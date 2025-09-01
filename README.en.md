@@ -19,9 +19,10 @@ The purpose of this repository is:
 The goal of this project is to construct a self-sustainable MongoDB-As-a-Service with SSPL compliant, with affordable budget and as least manual operation as possible.
 
 With self-sustainability as the precondition of this project, the aims of this project are:
-1. To develop a transparent payment system, as that the users can understand why they need to pay such money.
-2. The financial budgeting for manual operation is also taken into account, which is determined in the configuration, and revealed to the users.
-3. The incentive to this project is that the users want to reduce their payment by:
+1. Have "affordable budgeting" in mind, the minimum viable product can be achieved as low as $5/mo.
+2. To develop a transparent payment system, as that the users can understand why they need to pay such money.
+3. The financial budgeting for manual operation is also taken into account, which is determined in the configuration, and revealed to the users.
+4. The incentive to improve this project is that the users want to reduce their payment by:
     * automating as many components as possible,
     * improving quality of service as much as possible,
     * finding as least cost of the resource as possible.
