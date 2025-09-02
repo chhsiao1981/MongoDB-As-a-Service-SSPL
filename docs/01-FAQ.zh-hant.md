@@ -56,7 +56,7 @@
         * 與 FSF/GNU 的人合作，尋求他們對於建立 copyleft 授權的注意事項建議
         * 看看 Section 6 裡的「User Product」部分，並基於「User Product」在 Section 13 設置範圍.
         * [仔細思考以後詳細列出 compatible/不 compatible 的 license 清單，就像 GNU 所做的那樣](https://www.gnu.org/licenses/license-list.en.html#SoftwareLicenses)
-12. 如果 MongoDB.com 什麼都不做呢？基本上你只是個無名小卒～
+12. 如果 MongoDB.com 什麼都不做呢？基本上你只是個[沒有人](https://g0v.tw/intl/en/novice/)～
     * 只要我和「那些遵循 SSPL 的專案」不被公開抹黑或提告，我尊重 MongoDB.com 的決定，不論他們是否要改進 SSPLv1。
 13. 你是反對專有軟體或大公司嗎？
     * 不是。我理解開發優秀產品的公司應該獲得相對應財務上的回報。
