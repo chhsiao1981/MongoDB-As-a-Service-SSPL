@@ -20,9 +20,9 @@
     * [MongoDB.com v. FerretDB.com 其實與 SSPL 無關](https://www.mongodb.com/company/blog/building-for-developers-not-imitators)。
         * FerretDB.com 不實廣告並誤導客戶。
         * FerretDB.com 侵犯的是 MongoDB.com 的專利，**而不是授權**（[專利與授權的差別可參考 FSF/GNU 的文章](https://www.gnu.org/philosophy/not-ipr.html)）。
-        * 那是 MongoDB.com 與 FerretDB.com 的商業策略，與 SSPL、開源授權或 FLOSS 社群無關。
-        * 我也不喜歡非法的抄襲，FerretDB 最初甚至取名為「[MangoDB](https://www.reddit.com/r/programming/comments/qlyalj/mangodb_a_truly_open_source_mongodb_alternative/) ([MangoDB-io/MangoDB](https://github.com/MangoDB-io/MangoDB))」（不是打錯字）～
-        * 我尊重專利法、著作權法、商標法，以及智慧財產權。
+    * 那是 MongoDB.com 與 FerretDB.com 的商業策略，與 SSPL、開源授權或 FLOSS 社群無關。
+    * 我也不喜歡非法的抄襲，FerretDB 最初甚至取名為「[MangoDB](https://www.reddit.com/r/programming/comments/qlyalj/mangodb_a_truly_open_source_mongodb_alternative/) ([MangoDB-io/MangoDB](https://github.com/MangoDB-io/MangoDB))」（不是打錯字）～
+    * 我尊重專利法、著作權法、商標法，以及智慧財產權。
 6. 你不怕 MongoDB.com 像對待 FerretDB.com 一樣，用專利公開抹黑或控告你嗎？
     * 我只是一個為基本生活掙扎的普通人。的確，我非常害怕被公開抹黑或涉及任何法律糾紛。
     * 然而，我相信 MongoDB.com 理解到，做生意時「聲譽與信任」才是最重要的。
