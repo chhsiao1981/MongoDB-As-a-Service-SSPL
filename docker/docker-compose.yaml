@@ -1,0 +1,15 @@
+name: mongodb-as-a-service
+
+services:
+  mongodb:
+    image: mongodb/mongodb-community-server:8.0.14-ubi9
+    ports:
+      - "${IP:-127.0.0.1}:27017:27017"
+    restart: always
+    volumes:
+      - ${DATA:-mongodb-data}:/data/db
+      - ${CONFIGDATA:-mongodb-configdata}:/data/configdb
+
+volumes:
+  mongodb-data:
+  mongodb-configdata:

@@ -14,6 +14,15 @@ MongoDB-As-A-Service-SSPL 是一個遵守 SSPL 的 MongoDB-based service。
 6. 希望在精進更新後的 SSPL Section 13，下一版本的 SSPL 能被 OSI 接受。
 7. SSPL 是個對於 "以營利為目的的機關團體" 和 "以其他目的為宗旨的永續經營之非營利機關團體" 都可以受益的授權條款。
 
+## 快速開始
+
+在 `git clone` 這個 repository 以後，我們可以使用以下方式達到 minimum viable product：
+
+1. `cp docker/docker_compose.env.tmpl docker/docker_compose.env` 並且更改相關設定。
+2. `docker compose --env-file docker/docker_compose.env -f docker/docker-compose.yaml up -d`
+
+**[注意]** 這個方式並沒有任何安全方面的考量。使用時請自行承擔風險。
+
 ## 這個 Project 的目的
 
 這個 project 的目的是以符合 SSPL 的方式建構一個自我永續的 MongoDB-As-a-Service。並在可負擔的預算下，盡量減少人工操作。
