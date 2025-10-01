@@ -1,0 +1,2 @@
+#m h    d M day-of-week
+0 *	* * *	root /srv/MongoDB-As-a-Service-SSPL/scripts/01-restart-db.sh

@@ -1,0 +1,14 @@
+---
+- become: true
+  become_method: sudo
+  become_user: root
+  hosts: all
+  tasks:
+    - name: 'build-essential'
+      ansible.builtin.apt: name='build-essential' state=present update_cache='yes'
+    - name: 'ca-certificates'
+      ansible.builtin.apt: name='ca-certificates' state=latest update_cache='yes'
+    - name: git
+      ansible.builtin.apt: name='git' state=present update_cache='yes'
+    - name: python3-virtualenv
+      ansible.builtin.apt: name='python3-virtualenv' state=present update_cache='yes'

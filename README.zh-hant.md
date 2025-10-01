@@ -14,12 +14,22 @@ MongoDB-As-A-Service-SSPL 是一個遵守 SSPL 的 MongoDB-based service。
 6. 希望在精進更新後的 SSPL Section 13，下一版本的 SSPL 能被 OSI 接受。
 7. SSPL 是個對於 "以營利為目的的機關團體" 和 "以其他目的為宗旨的永續經營之非營利機關團體" 都可以受益的授權條款。
 
+## 注意
+
+`mongodb://mvp.massdb.dev` 每小時會被清空並且重新設定。
+
 ## 快速開始
 
-在 `git clone` 這個 repository 以後，我們可以使用以下方式達到 minimum viable product：
+我們可以使用以下方式達到 minimum viable product：
 
-1. `cp docker/docker_compose.env.tmpl docker/docker_compose.env` 並且更改相關設定。
-2. `docker compose --env-file docker/docker_compose.env -f docker/docker-compose.yaml up -d`
+1. 將 `cloud-scripts/vultr-debian.sh` copy 到你的 `vultr` Startup Script。
+2. 在 `vultr` 上建立一個 `Debian 13 x64 (trixie)` 和 Startup Script 的 compute node。
+3. 在 `/srv/MongoDB-As-a-Service-SSPL`:
+    1. 確認 `root` 可以 `ssh localhost`。
+    2. 根據 `00-config-files.txt` 設定 config files。
+    3. `scripts/00-init.sh`
+
+這個 db 會在每個小時清空並且重新設定。
 
 **[注意]** 這個方式並沒有任何安全方面的考量。使用時請自行承擔風險。
 

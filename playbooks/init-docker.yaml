@@ -1,0 +1,42 @@
+# https://docs.docker.com/engine/install/debian/
+---
+- become: true
+  become_method: sudo
+  become_user: root
+  hosts: all
+  tasks:
+    - name: docker-repo apt-key
+      ansible.builtin.get_url:
+        url: https://download.docker.com/linux/debian/gpg
+        dest: /etc/apt/keyrings/docker.asc
+      tags:
+        - docker
+    - name: docker-repo
+      ansible.builtin.apt_repository:
+        repo: 'deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian {{ ansible_distribution_release | lower }} stable'
+      tags:
+        - docker
+    - name: docker-ce
+      ansible.builtin.apt: name='docker-ce' state=present update_cache='yes'
+      tags:
+        - docker
+    - name: docker-ce-cli
+      ansible.builtin.apt: name='docker-ce-cli' state=present update_cache='yes'
+      tags:
+        - docker
+    - name: containerd.io
+      ansible.builtin.apt: name='containerd.io' state=present update_cache='yes'
+      tags:
+        - docker
+    - name: containerd.io
+      ansible.builtin.apt: name='containerd.io' state=present update_cache='yes'
+      tags:
+        - docker
+    - name: docker-buildx-plugin
+      ansible.builtin.apt: name='docker-buildx-plugin' state=present update_cache='yes'
+      tags:
+        - docker
+    - name: docker-compose-plugin
+      ansible.builtin.apt: name='docker-compose-plugin' state=present update_cache='yes'
+      tags:
+        - docker

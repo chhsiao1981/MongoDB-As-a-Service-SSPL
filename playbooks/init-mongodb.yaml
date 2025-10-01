@@ -1,0 +1,27 @@
+---
+- become: true
+  become_method: sudo
+  become_user: root
+  hosts: all
+  tasks:
+    - name: /var/lib/mongodb
+      ansible.builtin.file:
+        path: /var/lib/mongodb
+        mode: '755'
+        recurse: true
+        state: directory
+    - name: /var/lib/mongodb/db
+      ansible.builtin.file:
+        path: /var/lib/mongodb/db
+        mode: '777'
+        state: directory
+    - name: /var/lib/mongodb/configdb
+      ansible.builtin.file:
+        path: /var/lib/mongodb/configdb
+        mode: '777'
+        state: directory
+    - name: crontab-for-restart
+      ansible.builtin.template:
+        src: init-mongodb/cron-restart-mongo
+        dest: /etc/cron.d/restart-mongo
+        mode: '644'

@@ -1,0 +1,13 @@
+---
+- become: true
+  become_method: sudo
+  become_user: root
+  hosts: all
+  tasks:
+    - name: timezone
+      community.general.timezone:
+        name: 'Etc/UTC'
+- import_playbook: init-apt.yaml
+- import_playbook: iptables.yaml
+- import_playbook: init-docker.yaml
+- import_playbook: init-mongodb.yaml
