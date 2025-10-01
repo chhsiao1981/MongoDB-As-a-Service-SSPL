@@ -1,0 +1,58 @@
+---
+- become: true
+  become_method: sudo
+  become_user: root
+  hosts: all
+  tasks:
+    - name: iptables
+      ansible.builtin.apt: name='iptables' state=present update_cache='yes'
+      tags:
+        - iptables
+    - name: iptables-persistent
+      ansible.builtin.apt: name='iptables-persistent' state=present update_cache='yes'
+      tags:
+        - iptables
+
+    - name: allow mongod
+      ansible.builtin.iptables:
+        action: insert
+        chain: INPUT
+        protocol: tcp
+        destination_port: 27017
+        jump: ACCEPT
+      tags:
+        - iptables
+    - name: allow ssh
+      ansible.builtin.iptables:
+        action: insert
+        chain: INPUT
+        protocol: tcp
+        destination_port: 22
+        jump: ACCEPT
+      tags:
+        - iptables
+    - name: allow establisthed
+      ansible.builtin.iptables:
+        action: insert
+        chain: INPUT
+        match: conntrack
+        ctstate:
+          - RELATED
+          - ESTABLISHED
+        jump: ACCEPT
+      tags:
+        - iptables
+    - name: drop public ip
+      ansible.builtin.iptables:
+        chain: INPUT
+        protocol: tcp
+        destination: '{{ public_ip }}'
+        jump: DROP
+      when: (public_ip is defined) and (public_ip | length > 0)
+      tags:
+        - iptables
+
+    - name: iptable save
+      ansible.builtin.command: service netfilter-persistent save
+      tags:
+        - iptables

@@ -14,12 +14,22 @@ The purpose of this repository is:
 6. It is with the hope that with the fine-tuned version of the Section 13 of SSPL, the next version of SSPL can be accepted by OSI.
 7. SSPL can benefit both the for-profit entities that seek for profit and the sustainable non-profit entities that seek for other purposes.
 
+## Note
+
+`mongodb://mvp.massdb.dev` is cleared and reset every hour.
+
 ## Getting Started
 
-After `git clone` this repository, we can achieve minimum viable product with:
+We can achieve minimum viable product with:
 
-1. `cp docker/docker_compose.env.tmpl docker/docker_compose.env` and update variable settings accordingly.
-2. `docker compose --env-file docker/docker_compose.env -f docker/docker-compose.yaml up -d`
+1. copy `cloud-scripts/vultr-debian.sh` to your `vultr` Startup Script.
+2. create a compute node in `vultr` with `Debian 13 x64 (trixie)` and the Startup Script.
+3. in `/srv/MongoDB-As-a-Service-SSPL`:
+    1. ensure that `root` can `ssh localhost`.
+    2. setup config files based on `00-config-files.txt`.
+    3. `scripts/00-init.sh`
+
+**[NOTE]** The db is cleared and reset every hour.
 
 **[WARNING]** There is no security consideration at all in this deployment. Use it at your own risk.
 

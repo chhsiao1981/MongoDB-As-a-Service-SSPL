@@ -1,0 +1,35 @@
+[build-system]
+requires = [
+    'setuptools',
+]
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'MongoDB-As-a-Service-SSPL'
+version = '0.0.0'
+dependencies = [
+    'ansible==12.0.0',
+]
+authors = [
+    {name = 'chhsiao1981', email = '2970164+chhsiao1981@users.noreply.github.com'},
+]
+description = ""
+readme = 'README.md'
+license = {file = "LICENSE.md"}
+keywords = [
+]
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'Operating System :: OS Independent',
+]
+
+[project.urls]
+# Homepage      = ""
+# Documentation = ""
+# Repository    = ""
+# "Bug Tracker" = ""
+# Changelog = ""
+
+[tool.setuptools.packages.find]
+include = [
+]
