@@ -14,6 +14,15 @@ The purpose of this repository is:
 6. It is with the hope that with the fine-tuned version of the Section 13 of SSPL, the next version of SSPL can be accepted by OSI.
 7. SSPL can benefit both the for-profit entities that seek for profit and the sustainable non-profit entities that seek for other purposes.
 
+## Getting Started
+
+After `git clone` this repository, we can achieve minimum viable product with:
+
+1. `cp docker/docker_compose.env.tmpl docker/docker_compose.env` and update variable settings accordingly.
+2. `docker compose --env-file docker/docker_compose.env -f docker/docker-compose.yaml up -d`
+
+**[WARNING]** There is no security consideration at all in this deployment. Use it at your own risk.
+
 ## Goal of This Project
 
 The goal of this project is to construct a self-sustainable MongoDB-As-a-Service with SSPL compliant, with affordable budget and as least manual operation as possible.
